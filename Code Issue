@@ -1,0 +1,31 @@
+When using Chrome I find that inserting code into the FreeCodeCamp window is not always accepted.
+Here is an example I did today where I insert the Opacity command so a ball moves from left to right and fades into obscurity.
+Instead of fading, it remained stationary. Ideas on why that didn't work?
+<style>
+
+  #ball {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto;
+    position: fixed;
+    left: 20%;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @keyframes fade {
+    50% {
+      left: 60%;
+      opacity: 0.1;
+    }
+  }
+
+</style>
+
+<div id="ball"></div>
